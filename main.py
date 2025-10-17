@@ -115,7 +115,7 @@ def main():
 
         thumb_url = get_outfit_thumbnail_url(outfit_id)
         if not thumb_url:
-            print("  ❌ Could not get thumbnail URL — skipping.")
+            print("  ❌ Could not get thumbnail URL; skipping.")
             continue
 
         filename = f"outfit_{outfit_id}_{outfit_name}.png"
@@ -137,3 +137,4 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         print("Error:", e)
+
