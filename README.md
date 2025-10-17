@@ -1,16 +1,12 @@
 # routfits_viewer
 simple script for viewing roblox outfits
 
----
-
 ## Features
 
-- Fetch **all saved outfits** for a Roblox user by their user ID.  
-- Download **all outfit thumbnails** to a dedicated folder (`user_<USER_ID>/`).  
-- Handles **rate limits** safely with exponential backoff and polite delays.  
-- Works from the **command line** — easy to automate or integrate.
-
----
+- Fetch all saved outfits for a Roblox user by their user ID.  
+- Download all outfit thumbnails to a dedicated folder (`user_<USER_ID>/`).  
+- Handles rate limits safely with delays.  
+- Command line interface.
 
 ## Requirements
 
@@ -21,3 +17,8 @@ Install dependencies:
 
 ```bash
 pip install requests
+```
+
+## Usage
+```bash
+python main.py <ROBLOX_USER_ID>
